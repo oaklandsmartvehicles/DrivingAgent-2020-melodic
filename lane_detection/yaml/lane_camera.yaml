@@ -1,0 +1,20 @@
+image_width: 640
+image_height: 480
+camera_name: lane_camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [636.692611, 0.000000, 322.892603, 0.000000, 635.787740, 228.858203, 0.000000, 0.000000, 1.000000]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [0.070694, -0.202428, 0.005116, -0.008248, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 1.000000]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [640.382690, 0.000000, 318.833741, 0.000000, 0.000000, 642.723938, 230.465091, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000]

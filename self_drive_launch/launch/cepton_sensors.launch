@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="rviz" default="false" />
+  <arg name="file" default="" />
+
+  <include file="$(find cepton_ros)/launch/manager.launch"/>
+
+  <include file="$(find cepton_ros)/launch/driver.launch">
+    <arg name="transforms_path" value="$(find self_drive_launch)/config/cepton_transforms.json"/>
+  </include>
+
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="viz" respawn="true" args="-d $(find self_drive_launch)/rviz/cepton_test.rviz" />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="footprint_to_cepton" args="1.0 0 2.0 -1.571 0 0 base_footprint cepton" />
+
+</launch>
+

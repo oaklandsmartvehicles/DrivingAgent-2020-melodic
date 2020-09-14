@@ -1,0 +1,18 @@
+.bashrc
+source /opt/ros/kinetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+alias cm='cd ~/catkin_ws;catkin_make'
+alias cs='cd ~/catkin_ws/src'
+
+
+
+cd ~/catkin_ws/src
+catkin_create_pkg joytest rospy std_msgs
+#comfirm
+roscd joytest
+
+rosrun joytest joy_test.py
+
+
+roslaunch joytest joy_test.launch
+

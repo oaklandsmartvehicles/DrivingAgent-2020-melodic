@@ -1,0 +1,27 @@
+udevadm info -a -n /dev/ttyUSB1 | grep '{serial}'
+
+An example adapter serial id:
+
+  ATTRS{serial}=="A6008isP"`
+
+and udev rules would then contain:
+
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="A6008isP", SYMLINK+="arduino"
+
+Arduino serial number:
+
+steering control:
+    ATTRS{serial}=="DA01LD02"
+
+brake & ACC:
+    ATTRS{serial}=="75735303431351F0E1C0"
+
+mega: 5563931333335181B061
+
+
+speed measure:
+    ATTRS{serial}=="755333538373518071C0"
+
+
+
+

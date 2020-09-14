@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gps_kalman_filter</name>
+  <version>0.0.0</version>
+  <description>
+    Extended Kalman filter algorithm to fuse GPS position in UTM
+    frame with vehicle speed and yaw rate data to estimate heading
+  </description>
+  <maintainer email="mtradovn@oakland.edu">Micho Radovnikovich</maintainer>
+  <license>BSD2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>dynamic_reconfigure</depend>
+  <depend>message_filters</depend>
+</package>

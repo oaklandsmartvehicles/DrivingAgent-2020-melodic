@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="usb_cam" type="usb_cam_node" name="front_camera" args="_video_device:=/dev/video2" />
+</launch>
+

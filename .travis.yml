@@ -1,0 +1,16 @@
+sudo: required
+dist: xenial
+language: generic
+services:
+  - docker
+
+install:
+  - docker pull robustify101/ros:melodic-igvc-ci
+  - docker build -t robustify101/ros:melodic-igvc-ci .
+
+script:
+  - docker run --name igvc_ci -d robustify101/ros:melodic-igvc-ci tail -f /dev/null
+  - docker exec -i igvc_ci bash < ./ci_build.bash
+
+after_script:
+  - docker stop igvc_ci -t 1

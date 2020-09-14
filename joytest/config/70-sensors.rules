@@ -1,0 +1,8 @@
+SUBSYSTEMS=="usb", KERNEL=="ttyACM*", ACTION=="add", ATTRS{serial}=="5563931333335181B061", MODE="666", SYMLINK+="gem2/accbrake", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyACM*", ACTION=="add", ATTRS{serial}=="755333538373518071C0", MODE="666", SYMLINK+="gem2/speedsens", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB*", ACTION=="add", ATTRS{serial}=="DA01LD02", MODE="666", SYMLINK+="gem2/steering", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyACM*", ACTION=="add", ATTRS{serial}=="85734323431351800141", MODE="666", SYMLINK+="gem2/gearandlamp", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyACM*", ACTION=="add", ATTRS{idVendor}=="15d1", ATTRS{idProduct}=="0000", MODE="666", SYMLINK+="gem2/hokuyo", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB*", ACTION=="add", ATTRS{idVendor}=="067b",ATTRS{idProduct}=="2303", MODE="666", SYMLINK+="gem2/gpsrover", GROUP="dialout"
+SUBSYSTEMS=="usb", KERNEL=="ttyUSB*", ACTION=="add", ATTRS{serial}=="A904RSY9", MODE="666", SYMLINK+="gem2/gpsbase", GROUP="dialout"
+

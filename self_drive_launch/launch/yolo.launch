@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="usb_cam" type="usb_cam_node" name="front_camera" args="_video_device:=/dev/video0"/>
+
+  
+  <node pkg="yolo" type="YOLONode" name="YOLONode"/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="footprint_to_camera_front" args="1.0 0 2.0 0 0 3.1459 base_footprint camera_front" />
+  
+
+</launch>
+

@@ -1,0 +1,9 @@
+<library path="lib/libperception" >
+  <class name="perception/PerceptionNodelet"
+         type="perception::PerceptionNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description>
+      Perception algorithm using YOLO/Cepton fusion
+    </description>
+  </class>
+</library>

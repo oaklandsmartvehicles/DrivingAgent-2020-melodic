@@ -1,0 +1,27 @@
+<!--  
+rosrun rosserial_python serial_node.py /dev/ttyUSB0
+-->
+<launch>
+  <arg name="joytest" default="1.0"/>
+  <node pkg="rosserial_python" name="accelerate_control5" type="serial_node.py">
+  <param name="port" value="/dev/gem2/accbrake" />
+  </node>
+  <node pkg="rosserial_python" name="speed_measurei3" type="serial_node.py">
+  <param name="port" value="/dev/gem2/speedsens" />
+  </node>
+  <node pkg="rosserial_python" name="Steering_motor_with_Estop6" type="serial_node.py">
+  <param name="port" value="/dev/gem2/steering" />
+  </node>
+<!--  <node pkg="rosserial_python" name="rev_and_lamp2" type="serial_node.py">
+  <param name="port" value="/dev/gem2/gearandlamp" />
+  </node>
+-->
+   <node pkg="joy" name="joy" type="joy_node">
+   <param name="autorepeat_rate" value="2"/>
+   </node>
+  <node pkg="joytest" name="joytest2" type="joy_test2.py" />
+
+  <node pkg="joytest" name="topictransfer2" type="topic_transfer2.py" />
+
+
+</launch>

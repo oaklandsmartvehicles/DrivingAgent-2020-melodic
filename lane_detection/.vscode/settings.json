@@ -1,0 +1,8 @@
+{
+  "python.autoComplete.extraPaths": [
+    "/home/svc/test_ws/devel/lib/python2.7/dist-packages",
+    "/home/svc/ros/devel/lib/python2.7/dist-packages",
+    "/opt/ros/melodic/lib/python2.7/dist-packages"
+  ],
+  "ros.distro": "melodic"
+}

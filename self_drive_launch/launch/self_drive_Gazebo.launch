@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+<!-- perception node -->
+  <!-- <node pkg="perception" type="perception" name="perception" output="screen"/> -->
+  <!-- <arg name="use_nodelet" default="true" />
+  <node unless="$(arg use_nodelet)" pkg="perception" type="perception_node" name="perception" output="screen" />
+  <node if=    "$(arg use_nodelet)" pkg="nodelet" type="nodelet" name="perception" args="load perception/PerceptionNodelet /cepton_manager" /> -->
+
+
+<!-- lidar points clustering -->
+<!-- <node pkg="homework3" type="homework3" name="homework3" output="screen" /> -->
+
+<!-- YOLO -->
+  <!-- <node pkg="yolo" type="YOLONode" name="YOLONode"/> -->
+
+<!-- lane detection -->
+  <include file="$(find lane_detection)/launch/test_projection.launch" >
+  </include>
+
+
+<!-- Visualize in Rviz -->
+  <!-- <arg name="rviz" default="true" />
+  <node if="$(arg rviz)" pkg="rviz" type="rviz" name="perception_viz" args="-d $(find lane_detection)/rviz/lane_projection.rviz" respawn="true" /> -->
+
+
+</launch>

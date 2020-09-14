@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="rviz" default="false" />
+  <arg name="file" default="" />
+
+  <include file="$(find self_drive_launch)/launch/cepton_sensors.launch" >
+    <arg name="rviz" value="$(arg rviz)" />
+    <arg name="file" value="$(arg file)" />    
+  </include>
+
+  <arg name="use_nodelet" default="true" />
+  <node unless="$(arg use_nodelet)" pkg="perception" type="perception_node" name="perception" output="screen" />
+  <node if=    "$(arg use_nodelet)" pkg="nodelet" type="nodelet" name="perception" args="load perception/PerceptionNodelet /cepton_manager" />
+
+</launch>
+
