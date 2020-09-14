@@ -1,12 +1,17 @@
-In order to replicate to generate the complete workspace, you must perform the follwoing tasks:
+In order to generate the complete workspace, you must perform the follwoing tasks:
 
 Step 1. Create a Workspace using 'mkdir -p ~/dummy_name/src'
+
 Step 2. Clone this repo into the src folder of you workspace
-Step 3. Follow 'This' link to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located)
+
+Step 3. Follow 'This' link to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located):
+https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
+
 Step 4. catkin_make 
+
 Step 5. Read through the rest of this document for detailed steps
 
-## TO RUN ANY FILES, You must first Launch a Scenrio launch file in the gazebo world ex. roslaunch igvc_self_drive_gazebo f7_gazebo.launch
+## TO RUN ANY FILES, You must first Launch a scenario launch file in the gazebo world ex. 'roslaunch igvc_self_drive_gazebo f7_gazebo.launch'
  
 
 ## Lane Detection
@@ -29,7 +34,7 @@ TO RUN: roslaunch self_drive_launch yolo.launch // Launch rviz from the terminal
 
 ## Point Cloud from Cepton LIDAR
 
-Status: Fucntional, but requires Euclidian Clustering to be useful and implement sensor fusion
+Status: Sensor is fucntional, but requires Euclidian Clustering 
 
 #################################################################
 
