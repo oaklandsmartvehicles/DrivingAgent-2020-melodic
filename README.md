@@ -2,6 +2,8 @@
 
 This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. This README tutorial was generated with the help of Samer Labban, Ben Grudzien, and John Brooks. 
 
+**Contact:** Ben: bgrudzien@oakland.edu, Samer: slabban@oakland.edu
+
 
 ## Computer Setup
 
