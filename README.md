@@ -9,7 +9,7 @@ Download the correct Ubuntu distribution. All that really matters is that you do
 **Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debugg stuff like GPU or camera drivers)
 
 ## Software Setup
-This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository.
+This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository. (Don't include the quotations in the terminal commands)
 
 - **Step 1, Update Ubuntu**: Run 'sudo apt-get update' then 'sudo apt-get upgrade' 
 
@@ -23,7 +23,10 @@ This is the ROS install script for Professor Radovnikovich's ROS class. This inc
 
 You should now see some output and a version number like release 9.1, V9.1.85. Cool.
 
+- **Step 4, Install Dependencies**: Run 'sudo apt-get install build-essential', 'sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev', 'sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev', 'auso'
 
+These should already be installed, but run the commands anyways.
+ 
 
 
 In order to generate the complete workspace, you must perform the follwoing tasks:
