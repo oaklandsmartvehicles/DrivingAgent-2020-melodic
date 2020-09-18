@@ -26,7 +26,15 @@ You should now see some output and a version number like release 9.1, V9.1.85. C
 - **Step 4, Install Dependencies**: Run 'sudo apt-get install build-essential', 'sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev', 'sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libdc1394-22-dev', 'auso'
 
 These should already be installed, but run the commands anyways.
- 
+
+- **Step 5, Install YOLO Dependencies**: 'sudo apt-get install ros-melodic-costmap-converter'
+
+if yolo doesn't build correctly then check that in the catkin_ws/src/yolo/CMakeLists.txt the path is correctly pointing to the yolo shared object.
+
+    #change this to your darknet path!!!
+    target_link_libraries(YOLONode
+   	 ~/catkin_ws/src/yolo/darknet/libdarknet.so
+    )
 
 
 In order to generate the complete workspace, you must perform the follwoing tasks:
