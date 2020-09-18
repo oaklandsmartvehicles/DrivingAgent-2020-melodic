@@ -36,20 +36,18 @@ if yolo doesn't build correctly then check that in the catkin_ws/src/yolo/CMakeL
    	 ~/catkin_ws/src/yolo/darknet/libdarknet.so
     )
 
-WE already have the Yolo files set up, but if you want to download stuff yourself, read below:
+We already have the Yolo files set up, but if you want to download stuff yourself, read below:
 
 Yolo also requires a configuration and a weights file. The pre-trained configuration and weights files can be found here…
 https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. They must match. I recommend yolov3-tiny for crappy GPUs and yolov3-608 for high performance GPUs. In competition we will have our own cfg and weights files. At the time of writing those do not yet exist. Rename those files to run.cfg and run.weights. Put them in a new folder  ~/catkin_ws/darknet/
 
+## Finally, it's time to clone this GitHub repository!
 
- 
+**Step 0, Wierd command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
-
-In order to generate the complete workspace, you must perform the follwoing tasks:
-
-Step 1. Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal
-
-Step 2. Clone this repo into the src folder of you workspace
+**Step 1, Generate Workspace**: 
+- Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal
+- Clone this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
 
 Step 3. Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
 
