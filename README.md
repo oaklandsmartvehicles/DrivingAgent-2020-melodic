@@ -11,9 +11,13 @@ Download the correct Ubuntu distribution. All that really matters is that you do
 ## Software Setup
 This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository.
 
-- **Step 1**: Run 'sudo apt-get update' then 'sudo apt-get upgrade' like 99% of this we don't need, but we're gonna take a sledgehammer to a nail because it's the easy way. The package manager is basically updating everything to the latest version. Now's a good time for a coffee or beer break depending on the time of day. When this is done, restart your computer.
+- **Step 1**: Run 'sudo apt-get update' then 'sudo apt-get upgrade' 
 
-- **Step 2**: Run 'bash <(wget -O - "http://secs.oakland.edu/~mtradovn/ece_6460/software_setup.bash")'. This is the ROS install script for Professor Radovnikovich's ROS class. This includes ROS melodic, some packages, and Visual Studio. If you already had a version of ROS installed, open your .bashrc file and remove the extra source /opt/ros/melodic/setup.bash line at the bottom that was added there by the setup script. That will override your existing ROS workspace.
+Like 99% of this we don't need, but we're gonna take a sledgehammer to a nail because it's the easy way. The package manager is basically updating everything to the latest version. Now's a good time for a coffee or beer break depending on the time of day. When this is done, restart your computer.
+
+- **Step 2**: Run 'bash <(wget -O - "http://secs.oakland.edu/~mtradovn/ece_6460/software_setup.bash")'
+
+This is the ROS install script for Professor Radovnikovich's ROS class. This includes ROS melodic, some packages, and Visual Studio. If you already had a version of ROS installed, open your .bashrc file and remove the extra source /opt/ros/melodic/setup.bash line at the bottom that was added there by the setup script. That will override your existing ROS workspace.
 
 - **Step 3**: Install CUDA. This is needed for our simulation specifically (not all ROS downloads). 
 sudo add-apt-repository ppa:graphics-drivers/ppa
