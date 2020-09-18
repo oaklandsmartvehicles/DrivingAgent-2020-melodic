@@ -1,5 +1,5 @@
 # SVC 2020 Repository Set Up
-This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. 
+This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. This README tutorial was generated with the help of Samer Labban, Ben Grudzien, and John Brooks. 
 
 ## Computer Setup
 Download the correct Ubuntu distribution. All that really matters is that you download Ubuntu 18.04 because that works with the version of ROS we are using called ROS Melodic. The numbers after the "4" don't really matter. However, I chose to use [Ubuntu 18.04.5.](https://releases.ubuntu.com/18.04/) There are several methods you can use to run Ubuntu. You could use a virtual machine or do a native installation. I chose to install Ubuntu alongside Windows on my laptop, this is called "dual booting"
@@ -11,8 +11,19 @@ Download the correct Ubuntu distribution. All that really matters is that you do
 ## Software Setup
 This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository.
 
-- **Step 1**: 
+- **Step 1**: Run 'sudo apt-get update' then 'sudo apt-get upgrade' like 99% of this we don't need, but we're gonna take a sledgehammer to a nail because it's the easy way. The package manager is basically updating everything to the latest version. Now's a good time for a coffee or beer break depending on the time of day. When this is done, restart your computer.
 
+- **Step 2**: Run 'bash <(wget -O - "http://secs.oakland.edu/~mtradovn/ece_6460/software_setup.bash")'. This is the ROS install script for Professor Radovnikovich's ROS class. This includes ROS melodic, some packages, and Visual Studio. If you already had a version of ROS installed, open your .bashrc file and remove the extra source /opt/ros/melodic/setup.bash line at the bottom that was added there by the setup script. That will override your existing ROS workspace.
+
+- **Step 3**: Install CUDA. This is needed for our simulation specifically (not all ROS downloads). 
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt update
+sudo ubuntu-drivers autoinstall
+sudo reboot
+sudo apt install nvidia-cuda-toolkit gcc-6
+nvcc --version
+
+You should now see some output and a version number like release 9.1, V9.1.85. Cool.
 
 
 
