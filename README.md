@@ -1,6 +1,9 @@
 # SVC 2020 Repository Set Up
 This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. 
 
+### Computer Setup
+- Download the correct Ubuntu distribution. All that really matters is that you download Ubuntu 18.04. The numbers after the "4" don't really matter. However, I chose to use [Ubuntu 18.04.5.](https://releases.ubuntu.com/18.04/)
+
 
 In order to generate the complete workspace, you must perform the follwoing tasks:
 
