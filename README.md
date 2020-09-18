@@ -43,34 +43,26 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 ## Finally, it's time to clone this GitHub repository!
 
-- **Step 0, Wierd command**: 
-- Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
+- **Step 0, Wierd command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
-- **Step 1, Generate Workspace**: 
-- Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal
-- [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
+- **Step 1, Clone Repo**: Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal. Then [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
 
-- **Step 2, Download files**: 
-Step 3. Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
+- **Step 2, Download files**: Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
 
-- **Step 3, Compile and Source Workspace**:
--
-Step 4. catkin_make
+- **Step 3, Source Workspace**: Source the devel folder in .bashrc, this step is for convenience and can be ignored if the user wishes to source the workspace in the terminal. Here is a quick [tutorial.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 
-Step 5. Source the devel folder in .bashrc, this step is for convenience and can be ignored if the user wishes to source the workspace in the terminal
+- **Step 4, Compile**: Open the terminal in the root directory of your workspace (~/your_ws_name/). Run the command 'catkin_make'. If that doesn't work, run this command 'rosdep install --from-paths src --ignore-src -r' and try running 'catkin_make' again.
 
-Step 5. Read through the rest of this document for detailed steps
+## Now that everything is ready, it's time to use ROS!
 
-##################################################################
-
-TO RUN ANY FILES, You must first Launch a scenario launch file in the gazebo world ex. 'roslaunch igvc_self_drive_gazebo f7_gazebo.launch'
+**TO RUN ANY FILES,** You must first Launch a scenario launch file in the gazebo world ex. 'roslaunch igvc_self_drive_gazebo f7_gazebo.launch'
 
 ##################################################################
 
 Lane Detection
 Status: Functional
 
-TO RUN: roslaunch lane_detection test_projection.launch
+**TO RUN:** roslaunch lane_detection test_projection.launch
 
 #################################################################
 
@@ -79,20 +71,22 @@ Status: Detects Construction Barrels, Stop Signs
 
 Does NOT Detect Pedstrians, will need to be addressed
 
-TO RUN: roslaunch self_drive_launch yolo.launch // Launch rviz from the terminal -> click 'add' -> 'By Topic' -> /yolo ->image
+**TO RUN:** roslaunch self_drive_launch yolo.launch // Launch rviz from the terminal -> click 'add' -> 'By Topic' -> /yolo ->image
 
 #################################################################
 
 Point Cloud from Cepton LIDAR
-Status: Sensor is fucntional, but requires implementation of Euclidian Clustering
+**Status:** Sensor is fucntional, but requires implementation of Euclidian Clustering
 
 #################################################################
 
 Xbox Controller (Joytest)
 
-Status: File is outdated, need to update with John's code on other SVC laptop
+**Status:** File is outdated, need to update with John's code on other SVC laptop
 
 #################################################################
+
+**I think this error was fixed by the command in "Step 0" of the software setup**
 
 catkin_make command is unsucsseful due to some error:
 'CMake Error at /usr/local/lib/cmake/gazebo/gazebo-config.cmake:145 (message): Library 'gazebo' in package GAZEBO is not installed properly Call Stack (most recent call first): igvc_self_drive_sim/igvc_self_drive_gazebo_plugins/CMakeLists.txt:13 (find_package)
