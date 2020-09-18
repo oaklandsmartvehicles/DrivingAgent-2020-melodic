@@ -36,14 +36,12 @@ if yolo doesn't build correctly then check that in the catkin_ws/src/yolo/CMakeL
    	 ~/catkin_ws/src/yolo/darknet/libdarknet.so
     )
 
-yolo also requires a configuration and a weights file. The pre-trained configuration and weights files can be found here…
-https://pjreddie.com/darknet/yolo/
+WE already have the Yolo files set up, but if you want to download stuff yourself, read below:
 
-Download one of these sets of files. They must match. I recommend yolov3-tiny for crappy GPUs and yolov3-608 for high performance GPUs. In competition we will have our own cfg and weights files. At the time of writing those do not yet exist.
+Yolo also requires a configuration and a weights file. The pre-trained configuration and weights files can be found here…
+https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. They must match. I recommend yolov3-tiny for crappy GPUs and yolov3-608 for high performance GPUs. In competition we will have our own cfg and weights files. At the time of writing those do not yet exist. Rename those files to run.cfg and run.weights. Put them in a new folder  ~/catkin_ws/darknet/
 
-Rename those files to run.cfg and run.weights. Put them in a new folder  ~/catkin_ws/darknet/
 
-At this point everything needed to run the car is installed on the machine.
  
 
 
