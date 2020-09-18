@@ -1,3 +1,7 @@
+# SVC 2020 Repository Set Up
+This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. 
+
+
 In order to generate the complete workspace, you must perform the follwoing tasks:
 
 Step 1. Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal
