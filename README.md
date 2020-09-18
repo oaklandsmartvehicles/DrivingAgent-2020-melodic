@@ -83,6 +83,7 @@ Does NOT Detect Pedstrians, will need to be addressed
 #################################################################
 
 Point Cloud from Cepton LIDAR
+
 **Status:** Sensor is fucntional, but requires implementation of Euclidian Clustering
 
 #################################################################
