@@ -1,12 +1,21 @@
 # SVC 2020 Repository Set Up
 This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. 
 
-### Computer Setup
+## Computer Setup
 Download the correct Ubuntu distribution. All that really matters is that you download Ubuntu 18.04 because that works with the version of ROS we are using called ROS Melodic. The numbers after the "4" don't really matter. However, I chose to use [Ubuntu 18.04.5.](https://releases.ubuntu.com/18.04/) There are several methods you can use to run Ubuntu. You could use a virtual machine or do a native installation. I chose to install Ubuntu alongside Windows on my laptop, this is called "dual booting"
 - Virtual Machines are often laggy when running ROS. However, they come with less risk of making a mistake. [VM tutorial here.](https://www.youtube.com/watch?v=QbmRXJJKsvs)
 - Native installations are reccomended. Here is a [dual boot tutorial.](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
 
 **Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debugg stuff like GPU or camera drivers)
+
+## Software Setup
+This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository.
+
+- **Step 1**: 
+
+
+
+
 
 In order to generate the complete workspace, you must perform the follwoing tasks:
 
