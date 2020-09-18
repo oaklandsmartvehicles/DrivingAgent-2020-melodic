@@ -1,14 +1,19 @@
 # SVC 2020 Repository Set Up
+
 This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. This README tutorial was generated with the help of Samer Labban, Ben Grudzien, and John Brooks. 
 
+
 ## Computer Setup
+
 Download the correct Ubuntu distribution. All that really matters is that you download Ubuntu 18.04 because that works with the version of ROS we are using called ROS Melodic. The numbers after the "4" don't really matter. However, I chose to use [Ubuntu 18.04.5.](https://releases.ubuntu.com/18.04/) There are several methods you can use to run Ubuntu. You could use a virtual machine or do a native installation. I chose to install Ubuntu alongside Windows on my laptop, this is called "dual booting"
 - Virtual Machines are often laggy when running ROS. However, they come with less risk of making a mistake. [VM tutorial here.](https://www.youtube.com/watch?v=QbmRXJJKsvs)
 - Native installations are reccomended. Here is a [dual boot tutorial.](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
 
 **Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debugg stuff like GPU or camera drivers)
 
+
 ## Software Setup
+
 This section covers how to get Ubuntu up and running with everything you need to run the ROS simulation in this repository. (Don't include the quotations in the terminal commands)
 
 - **Step 1, Update Ubuntu**: Run 'sudo apt-get update' then 'sudo apt-get upgrade' 
@@ -41,7 +46,8 @@ We already have the Yolo files set up, but if you want to download stuff yoursel
 Yolo also requires a configuration and a weights file. The pre-trained configuration and weights files can be found here…
 https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. They must match. I recommend yolov3-tiny for crappy GPUs and yolov3-608 for high performance GPUs. In competition we will have our own cfg and weights files. At the time of writing those do not yet exist. Rename those files to run.cfg and run.weights. Put them in a new folder  ~/catkin_ws/darknet/
 
-## Finally, it's time to clone this GitHub repository!
+
+## Finally, it's time to download this repository!
 
 - **Step 0, Wierd command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
@@ -52,6 +58,7 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 - **Step 3, Source Workspace**: Source the devel folder in .bashrc, this step is for convenience and can be ignored if the user wishes to source the workspace in the terminal. Here is a quick [tutorial.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 
 - **Step 4, Compile**: Open the terminal in the root directory of your workspace (~/your_ws_name/). Run the command 'catkin_make'. If that doesn't work, run this command 'rosdep install --from-paths src --ignore-src -r' and try running 'catkin_make' again.
+
 
 ## Now that everything is ready, it's time to use ROS!
 
