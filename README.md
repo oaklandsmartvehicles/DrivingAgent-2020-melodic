@@ -113,6 +113,6 @@ catkin_make command is unsucsseful due to some error:
 
 ------------------------------------------------------------
 
-All other packages in the src folder are not used at the moment
+All other packages in the src folder are not used at the moment.
 
 
