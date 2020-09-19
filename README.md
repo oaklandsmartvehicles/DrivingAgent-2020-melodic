@@ -1,8 +1,10 @@
-# SVC 2020 ROS: Complete Software Set Up and Repository Guide
+# Smart Vehicle Club 2020 ROS: Complete Software Set Up and Repository Guide
 
 This README includes everything you need to get your computer set up with ROS and the programs necessary to start messing around with the simulation. This README tutorial was generated with the help of Samer Labban, Ben Grudzien, and John Brooks. 
 
 **Contact:** Ben: bgrudzien@oakland.edu, Samer: slabban@oakland.edu
+
+![](https://i.pinimg.com/236x/39/b2/46/39b2463a1375a5348d294ae436555020--oakland-university-oakland-county.jpg)
 
 
 ## Computer Setup
