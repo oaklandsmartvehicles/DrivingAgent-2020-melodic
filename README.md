@@ -15,6 +15,8 @@ Download the correct Ubuntu distribution. All that really matters is that you do
 
 **Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debugg stuff like GPU or camera drivers)
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFbemLAjFoX6FZkIYGkNteoLSYoBabkP9w6Q&usqp=CAU)
+
 
 ## Software Setup
 
@@ -49,6 +51,8 @@ We already have the Yolo files set up, but if you want to download stuff yoursel
 
 Yolo also requires a configuration and a weights file. The pre-trained configuration and weights files can be found here…
 https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. They must match. I recommend yolov3-tiny for crappy GPUs and yolov3-608 for high performance GPUs. In competition we will have our own cfg and weights files. At the time of writing those do not yet exist. Rename those files to run.cfg and run.weights. Put them in a new folder  ~/catkin_ws/darknet/
+
+![](https://miro.medium.com/max/661/1*IUvP4mb0IDgxOOxmZxUPMA.png)
 
 
 ## Finally, it's time to download this repository!
