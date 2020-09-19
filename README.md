@@ -51,11 +51,11 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 ## Finally, it's time to download this repository!
 
-- **Step 1, Wierd command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
+- **Step 1, Wierd Command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
 - **Step 2, Clone Repo**: Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal. Then [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
 
-- **Step 3, Download files**: Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
+- **Step 3, Download Files**: Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
 
 - **Step 4, Source Workspace**: Source the devel folder in .bashrc, this step is for convenience and can be ignored if the user wishes to source the workspace in the terminal. Here is a quick [tutorial.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 
@@ -96,7 +96,7 @@ Xbox Controller (Joytest)
 
 ------------------------------------------------------------
 
-**I think this error was fixed by the command in "Step 0" of the software setup**
+**I think this error was fixed by the command in "Step 1" of the software setup**
 
 catkin_make command is unsucsseful due to some error:
 'CMake Error at /usr/local/lib/cmake/gazebo/gazebo-config.cmake:145 (message): Library 'gazebo' in package GAZEBO is not installed properly Call Stack (most recent call first): igvc_self_drive_sim/igvc_self_drive_gazebo_plugins/CMakeLists.txt:13 (find_package)
