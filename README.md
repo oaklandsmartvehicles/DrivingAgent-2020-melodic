@@ -67,6 +67,8 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 - **Step 5, Compile**: Open the terminal in the root directory of your workspace (~/your_ws_name/). Run the command 'catkin_make'. If that doesn't work, run this command 'rosdep install --from-paths src --ignore-src -r' and try running 'catkin_make' again.
 
+![](https://as2.ftcdn.net/jpg/00/49/49/67/500_F_49496758_k387XRFBQG2evwa3xdAOqrlPvAIlEtHo.jpg)
+
 
 ## Now that everything is ready, it's time to use ROS!
 
