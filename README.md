@@ -11,9 +11,9 @@ This README includes everything you need to get your computer set up with ROS an
 
 Download the correct Ubuntu distribution. All that really matters is that you download Ubuntu 18.04 because that works with the version of ROS we are using called ROS Melodic. The numbers after the "4" don't really matter. However, I chose to use [Ubuntu 18.04.5.](https://releases.ubuntu.com/18.04/) There are several methods you can use to run Ubuntu. You could use a virtual machine or do a native installation. I chose to install Ubuntu alongside Windows on my laptop, this is called "dual booting"
 - Virtual Machines are often laggy when running ROS. However, they come with less risk of making a mistake. [VM tutorial here.](https://www.youtube.com/watch?v=QbmRXJJKsvs)
-- Native installations are reccomended. Here is a [dual boot tutorial.](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
+- Native installations are recommended. Here is a [dual boot tutorial.](https://www.youtube.com/watch?v=u5QyjHIYwTQ)
 
-**Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debugg stuff like GPU or camera drivers)
+**Note:** Follow/refer to [this tutorial](https://www.linuxtechi.com/ubuntu-18-04-lts-desktop-installation-guide-screenshots/) for installation help. Remember to click the "Install third party software" checkbox. (This will save you a lot of time having to debug stuff like GPU or camera drivers)
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSFbemLAjFoX6FZkIYGkNteoLSYoBabkP9w6Q&usqp=CAU)
 
@@ -57,9 +57,9 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 ## Finally, it's time to download this repository!
 
-- **Step 1, Wierd Command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
+- **Step 1, Weird Command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
-- **Step 2, Clone Repo**: Create a Workspace by ruunning the 'mkdir -p ~/your_ws_name/src' in the terminal. Then [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
+- **Step 2, Clone Repo**: Create a Workspace by running the 'mkdir -p ~/your_ws_name/src' in the terminal. Then [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
 
 - **Step 3, Download Files**: Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
 
