@@ -59,9 +59,16 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 - **Step 1, Weird Command**: Professor Radovnikovich says run these commands so run them: 'cd /usr/local/lib' and 'ls -1 libgazebo*.9|sed 's/.9//g'|sudo xargs -I@ ln -fs @.9 @'
 
-- **Step 2, Clone Repo**: Create a Workspace by running the 'mkdir -p ~/your_ws_name/src' in the terminal. Then [Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo into the src folder of you workspace. Organize your folders so that the folder structure is not ~/your_ws_name/src/SVC_ROS_2020 and is ~/your_ws_name/src/*Files that were inside SVC_ROS_2020
+- **Step 2, Clone Repo**: Create a Workspace by running the 'mkdir -p ~/your_ws_name/src' in the terminal. 
 
-- **Step 3, Download Files**: Follow The link below to google drive and copy the files to the root of the workspace (Where src, devel, build folders are located): https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
+[Git Clone](https://www.liquidweb.com/kb/create-clone-repo-github-ubuntu-18-04/) this repo on a folder that is seperate from your created workspace, for example, I have created a folder called 'SVC-repo'  It is recommended to keep the cloned repo seperate from your workspace as you will most likely be making several changes as you experiment and test the Driving Agent.
+
+Copy the contents of the cloned folder into the 'src' folder of your workspace and delete the '.Git' folder.
+
+- **Step 3, Download Files**: Follow The link below to google drive and copy the the 'darknet' and 'data' folders to the '.ros' folder that is present in the home directory (This file is hidden and can be shown using the 'ctrl + H')
+
+The drive link can be found here:
+https://drive.google.com/drive/folders/1lVTvs0i6YZtJNHVeyR2fNH0mVQop1Tdr?usp=sharing
 
 - **Step 4, Source Workspace**: Source the devel folder in .bashrc, this step is for convenience and can be ignored if the user wishes to source the workspace in the terminal. Here is a quick [tutorial.](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 
