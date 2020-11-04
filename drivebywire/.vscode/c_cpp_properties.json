@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/igvc/ros/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/igvc/ros/src/ou_self_drive_ros/cepton_ros/include/**",
+                "/home/igvc/ros/src/ou_self_drive_ros/joytest/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
