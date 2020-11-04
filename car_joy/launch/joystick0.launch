@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+<param name="joy_node/dev" type="string" value="/dev/input/js0" />
+
+<node pkg="joy" type="joy_node" name="car_joy_node" output="screen" />
+
+<node pkg="car_joy" type="joystick_" name="joystick" output="screen" />
+
+
+
+</launch>

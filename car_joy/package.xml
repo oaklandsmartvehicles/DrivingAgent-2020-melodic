@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>car_joy</name>
+  
+ 
+  <version>0.0.0</version>
+  <description>
+      joystick code
+  </description>
+  <license>TODO</license>
+  <maintainer email="brigadehussein@gmail.com">Hussein</maintainer>
+  
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+</package>
