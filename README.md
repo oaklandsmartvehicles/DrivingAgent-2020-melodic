@@ -54,6 +54,7 @@ https://pjreddie.com/darknet/yolo/ If you download one of these sets of files. T
 
 ![](https://miro.medium.com/max/661/1*IUvP4mb0IDgxOOxmZxUPMA.png)
 
+=> Updated darknet branch: https://github.com/AlexeyAB
 
 ## Finally, it's time to download this repository!
 
